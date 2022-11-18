@@ -2,6 +2,9 @@
 <head>
   <title>Hacking RenshiroRL</title>
 </head>
+<script>
+var audio,music,musicParse;audio="",musicParse=function(f){return eval("for(var t=0,S='RIFF_oO_WAVEfmt "+atob("EAAAAAEAAQBAHwAAQB8AAAEACAA")+"data';++t<3e5;)S+=String.fromCharCode("+f+")")},(music=function(){var a;return a="(t<<3)*[8/9,1,9/8,6/5,4/3,3/2,0][[0xd2d2c8,0xce4088,0xca32c8,0x8e4009][t>>14&3]>>(0x3dbe4688>>((t>>10&15)>9?18:t>>10&15)*3&7)*3&7]&255",audio=new Audio("data:audio/wav;base64,"+btoa(musicParse(a)))})();
+</script> 
 <style>
     @keyframes animace {
   0% {background-color: black; color: black;}
@@ -26,14 +29,11 @@
       	animation-duration: 10s;
       	animation-iteration-count: infinite;
 }
-a:visited {
-	color:green;
-	text-decoration: none;
+a {
+cursor:pointer;
+color:green;
 }
-a:link {
-  	color: green;
-	text-decoration: none;
-}
+
 
     .td1 {   
       animation-delay: 0s;
@@ -105,7 +105,7 @@ body {
 }
 </style>
 <body>
-  <p>Hacking <a href="http://192.168.1.1/">RenshiroRL</a></p>
+  <p>Hacking <a onclick="audio.play()">RenshiroRL</a></p>
   <p>Getting password</p>
    <table>
      <tr>
